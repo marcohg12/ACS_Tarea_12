@@ -26,4 +26,7 @@ jobs:
         pip install tk
 
     - name: Run tests
-      run: pytest
+      run: |
+          export DISPLAY=:99
+          Xvfb :99 &
+          python -m pytest
