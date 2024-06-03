@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . /app
 
-RUN pip install --no-cache-dir -r tk
+RUN python -m pip install tk
 
 CMD [ "python", "./interface.py" ]
