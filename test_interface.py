@@ -1,6 +1,10 @@
 import pytest
 import tkinter as tk
 from interface import create_window, display_window
+import os
+
+if os.environ.get('DISPLAY','') == '':
+    os.environ.__setitem__('DISPLAY', ':0.0')
 
 # Prueba la creación de una ventana con la función create_window
 def test_create_window():
