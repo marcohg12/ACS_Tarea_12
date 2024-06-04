@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . /app
 
-RUN python -m pip install tk
+RUN python -m pip install Flask
 
-CMD [ "python", "./main.py" ]
+CMD [ "python", "./app.py" ]
