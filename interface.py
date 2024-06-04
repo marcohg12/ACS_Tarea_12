@@ -16,9 +16,3 @@ def create_window():
 def display_window(window):
 
     window.mainloop()
-
-# Programa de prueba
-def main():
-
-    window = create_window()
-    display_window(window)
